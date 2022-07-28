@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Button } from "@mui/material";
+import React from "react";
 
-function App() {
+type Props = {};
+
+export default function App({}: Props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Button variant="text">Text</Button>
+      <Button
+        className="border-dotted border-2 border-indigo-600"
+        variant="contained"
+      >
+        Contained
+      </Button>
+      <Button
+        className="border-dotted border-2 border-indigo-600 hover:bg-pink-200"
+        variant="outlined"
+      >
+        Outlined
+      </Button>
+    </>
   );
 }
-
-export default App;
