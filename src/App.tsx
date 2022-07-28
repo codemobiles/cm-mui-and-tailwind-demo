@@ -1,20 +1,20 @@
-import { Button } from "@mui/material";
 import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Button } from "@mui/material";
 
-type Props = {};
-
-export default function App({}: Props) {
+function App() {
   return (
     <>
       <Button variant="text">Text</Button>
       <Button
-        className="border-dotted border-2 border-indigo-600"
+        className="bg-pink-700 text-white hover:bg-pink-300 rounded-b-lg"
         variant="contained"
       >
         Contained
       </Button>
       <Button
-        className="border-dotted border-2 border-indigo-600 hover:bg-pink-200"
+        className="border-dotted border-2 border-indigo-600"
         variant="outlined"
       >
         Outlined
@@ -22,3 +22,5 @@ export default function App({}: Props) {
     </>
   );
 }
+
+export default App;
