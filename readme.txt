@@ -40,3 +40,7 @@ https://tailwindcss.com/
 
 # Useful example 
 <div className="hover:text-yellow-400">1234</div>
+
+
+# youtube
+https://www.youtube.com/watch?v=hgMP2ulxPlA
